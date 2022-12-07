@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The battle of the AUX</title>
+  </head>
+  <body>
+
+    <section id="scroll">
+
+      <article class="startscherm">
+        <span>
+          <h1>- The battle of the AUX -</h1>
+          <p>Het is altijd een grote discussie. Wie mag op de muziek? Of nog beter: Wie krijgt de aux kabel?</p>
+          <button>Start</button>
+        </span>
+      </article>
+
+
+      <article class="test">
+        <span class="background-loader">
+          <div class="bar"></div>
+        </span>
+        <img src="images/mik-illu.png" class="mik">
+        <img src="images/danique-illu.png" class="danique">
+        <section class="quiz">
+          <h2>Wie zou jij de aux geven?</h2>
+          <article class="questions" id="question1">
+            <h2>1- Welk nummer zou je luisteren op je beste dag van de week?</h2>
+            <section>
+              <img src="images/v1-mik-cover.jpeg">
+              <video src="sounds/V1-mik.mov"></video>
+              <input type="radio" name="answer1" value="0">Half.alive - Still fee</input>
+            </section>
+            <section>
+              <img src="images/v1-danique-cover.jpeg">
+              <video src="sounds/vs2-V1-danique.mov"></video>
+              <input type="radio" name="answer1" value="1">Harry Styles - Kiwi</input>
+            </section>
+          </article>
+
+          <article class="questions" id="question2">
+            <h2>2- Welk nummer gepresenteerd jou als je boos bent?</h2>
+            <section>
+              <img src="images/v2-mik-cover.jpeg">
+              <video src="sounds/V2-mik.mov"></video>
+              <input type="radio" name="answer2" value="0">YoungRubbi - Gestrekt been</input>
+            </section>
+            <section>
+              <img src="images/v2-danique-cover.jpeg">
+              <video src="sounds/V2-danique.mov"></video>
+              <input type="radio" name="answer2" value="1">Turnstile - Blackout</input>
+            </section>
+          </article>
+
+          <article class="questions" id="question3">
+            <h2>3- Welk nummer zet je op als main character die door de stad loopt?</h2>
+            <section>
+              <img src="images/v3-mik-cover.jpeg">
+              <video src="sounds/V3-mik.mov"></video>
+              <input type="radio" name="answer3" value="0">The Driver Era - Preach</input>
+            </section>
+            <section>
+              <img src="images/v3-danique-cover.jpeg">
+              <video src="sounds/V3-danique.mov"></video>
+              <input type="radio" name="answer3" value="1">Froukje - Ik wil dansen</input>
+            </section>
+          </article>
+
+          <article class="questions" id="question4">
+            <h2>4- Welk nummer zet je eerder op als je even echt wilt schreeuwen?</h2>
+            <section>
+              <img src="images/v4-mik-cover.jpg">
+              <video src="sounds/V4-mik.mov"></video>
+              <input type="radio" name="answer4" value="0">Halestorm - Miss the misery</input>
+            </section>
+            <section>
+              <img src="images/v4-danique-cover.jpg">
+              <video src="sounds/V4-danique.mov"></video>
+              <input type="radio" name="answer4" value="1">My chemical romance - Teenagers</input>
+            </section>
+          </article>
+
+          <article class="questions" id="question5">
+            <h2>5- Welk nummer zou je helemaal mee willen kunnen zingen?</h2>
+            <section>
+              <img src="images/v5-mik-cover.jpg">
+              <video src="sounds/V5-mik.mov"></video>
+              <input type="radio" name="answer5" value="0">Nothing but thieves - Is everybody crazy</input>
+            </section>
+            <section>
+              <img src="images/v5-danique-cover.jpg">
+              <video src="sounds/V5-danique.mov"></video>
+              <input type="radio" name="answer5" value="1">Eminem - The real slim shady</input>
+            </section>
+          </article>
+
+          <article class="questions" id="question6">
+            <h2>6- Welk nummer zou eerder je guilty pleasure zijn?</h2>
+            <section>
+              <img src="images/v6-mik-cover.jpeg">
+              <video src="sounds/V6-mik.mov"></video>
+              <input type="radio" name="answer6" value="0">One direction - Midnight memories</input>
+            </section>
+            <section>
+              <img src="images/v6-danique-cover.png">
+              <video src="sounds/V6-danique.mov"></video>
+              <input type="radio" name="answer6" value="1">ABBA - Gimme Gimme Gimme</input>
+            </section>
+          </article>
+
+          <button class="submit" onclick="return getResults();" type="submit">
+            Let's find out!</button>
+        </section>
+      </article>
+        
+
+    </section>
+  
+
+
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>
