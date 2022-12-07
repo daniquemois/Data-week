@@ -67,6 +67,12 @@ h1{
     display: flex;
     flex-direction: row;
 }
+.winstdanique{
+    background: linear-gradient(to left, var(--rood) 75%, var(--blauw) 25%)!important;
+}
+.winstmik{
+    background: linear-gradient(to left, var(--rood) 25%, var(--blauw) 75%)!important;
+}
 .danique{
     height: 93vh;
     margin-top: 5.5em;

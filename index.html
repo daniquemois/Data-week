@@ -25,7 +25,7 @@
         </span>
         <img src="images/mik-illu.png" class="mik">
         <img src="images/danique-illu.png" class="danique">
-        <section class="quiz">
+        <form class="quiz" method="POST" id="form">
           <h2>Wie zou jij de aux geven?</h2>
           <article class="questions" id="question1">
             <h2>1- Welk nummer zou je luisteren op je beste dag van de week?</h2>
@@ -111,9 +111,8 @@
             </section>
           </article>
 
-          <button class="submit" onclick="return getResults();" type="submit">
-            Let's find out!</button>
-        </section>
+          <button class="submit" form="form" type="submit">Let's find out!</button>
+          </form>
       </article>
         
 

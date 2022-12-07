@@ -1,13 +1,31 @@
-// // Vragen
-// const vraag1 = document.querySelector(".step1")
-// const vraag2 = document.querySelector(".step2")
-// const vraag3 = document.querySelector(".step3")
-// const vraag4 = document.querySelector(".step4")
-// const vraag5 = document.querySelector(".step5")
+var answers = document.querySelectorAll("form input[type=radio]");
+var submit = document.querySelector("form .submit");
+var achtergrond = document.querySelector(".test");
 
-// // Antwoorden
-// const vraag1 = document.querySelector(".step1")
-// const vraag2 = document.querySelector(".step2")
-// const vraag3 = document.querySelector(".step3")
-// const vraag4 = document.querySelector(".step4")
-// const vraag5 = document.querySelector(".step5")
+var score = 0;
+
+function checkAnswers() {
+    score = 0;
+    for (let i = 0; i < answers.length; i++) {
+        if (answers[i].checked) {
+            var value = parseInt(answers[i].value);
+            score = score + value;
+        }
+        else {
+            // Niks doen
+        }
+    }
+    submitAnswers(score);
+}
+
+function submitAnswers() {
+    if (score < 7){ 
+		achtergrond.classList.add("winstmik");
+	}
+	else if (score > 7){ 
+		achtergrond.classList.add("winstdanique");
+	}
+}
+
+submit.addEventListener("click", checkAnswers);
+
