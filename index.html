@@ -14,19 +14,24 @@
         <span>
           <h1>- The battle of the AUX -</h1>
           <p>Het is altijd een grote discussie. Wie mag op de muziek? Of nog beter: Wie krijgt de aux kabel?</p>
-          <button>Start</button>
+          <button class="start">Start</button>
         </span>
       </article>
 
 
-      <article class="test">
+      <article class="test backgroundtest">
         <span class="background-loader">
           <div class="bar"></div>
         </span>
         <img src="images/mik-illu.png" class="mik">
         <img src="images/danique-illu.png" class="danique">
-        <form class="quiz" method="POST" id="form">
+
+        <section class="intro hide">
           <h2>Wie zou jij de aux geven?</h2>
+          <button class="starttest">Start de test</button>
+        </section>
+
+        <form class="quiz hide" id="quiz">
           <article class="questions" id="question1">
             <h2>1- Welk nummer zou je luisteren op je beste dag van de week?</h2>
             <section>
@@ -37,7 +42,7 @@
             <section>
               <img src="images/v1-danique-cover.jpeg">
               <video src="sounds/vs2-V1-danique.mov"></video>
-              <input type="radio" name="answer1" value="1">Harry Styles - Kiwi</input>
+              <input type="radio" name="answer1" value="2">Harry Styles - Kiwi</input>
             </section>
           </article>
 
@@ -51,7 +56,7 @@
             <section>
               <img src="images/v2-danique-cover.jpeg">
               <video src="sounds/V2-danique.mov"></video>
-              <input type="radio" name="answer2" value="1">Turnstile - Blackout</input>
+              <input type="radio" name="answer2" value="2">Turnstile - Blackout</input>
             </section>
           </article>
 
@@ -65,7 +70,7 @@
             <section>
               <img src="images/v3-danique-cover.jpeg">
               <video src="sounds/V3-danique.mov"></video>
-              <input type="radio" name="answer3" value="1">Froukje - Ik wil dansen</input>
+              <input type="radio" name="answer3" value="2">Froukje - Ik wil dansen</input>
             </section>
           </article>
 
@@ -79,7 +84,7 @@
             <section>
               <img src="images/v4-danique-cover.jpg">
               <video src="sounds/V4-danique.mov"></video>
-              <input type="radio" name="answer4" value="1">My chemical romance - Teenagers</input>
+              <input type="radio" name="answer4" value="2">My chemical romance - Teenagers</input>
             </section>
           </article>
 
@@ -93,7 +98,7 @@
             <section>
               <img src="images/v5-danique-cover.jpg">
               <video src="sounds/V5-danique.mov"></video>
-              <input type="radio" name="answer5" value="1">Eminem - The real slim shady</input>
+              <input type="radio" name="answer5" value="2">Eminem - The real slim shady</input>
             </section>
           </article>
 
@@ -107,11 +112,11 @@
             <section>
               <img src="images/v6-danique-cover.png">
               <video src="sounds/V6-danique.mov"></video>
-              <input type="radio" name="answer6" value="1">ABBA - Gimme Gimme Gimme</input>
+              <input type="radio" name="answer6" value="2">ABBA - Gimme Gimme Gimme</input>
             </section>
           </article>
 
-          <button class="submit" form="form" type="submit">Let's find out!</button>
+          <button class="submit" form="quiz" type="button">Let's find out!</button>
           </form>
       </article>
         
