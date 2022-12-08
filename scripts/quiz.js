@@ -24,27 +24,24 @@ function checkAnswers() {
     submitAnswers(score);
     console.log(score)
 }
-function startFunctie(){
-    intro.classList.remove("hide");
-}
-start.addEventListener("click", startFunctie)
 
 function submitAnswers() {
     if (score < 7){ 
         achtergrond.classList.remove("backgroundtest");
-		achtergrond.classList.add("winstmik");
+        achtergrond.classList.add("winstmik");
+        test.classList.add("hide")
 	}
 	else if (score > 7){ 
         achtergrond.classList.remove("backgroundtest");
-		achtergrond.classList.add("winstdanique");
+        achtergrond.classList.add("winstdanique");
+        test.classList.add("hide")
 	}
 }
 
 submit.addEventListener("click", checkAnswers);
 
-function starttest(){
-    test.classList.remove("hide");
-    intro.classList.add("hide")
-}
-startbutton.addEventListener("click", starttest)
-
+window.scroll({
+    top: 100,
+    left: 100,
+    behavior: 'smooth'
+  });
