@@ -26,7 +26,7 @@ function checkAnswers() {
 }
 
 function submitAnswers() {
-    if (score < 7){ 
+    if (score <= 7){ 
         achtergrond.classList.remove("backgroundtest");
         achtergrond.classList.add("winstmik");
         test.classList.add("hide")
@@ -37,11 +37,4 @@ function submitAnswers() {
         test.classList.add("hide")
 	}
 }
-
 submit.addEventListener("click", checkAnswers);
-
-window.scroll({
-    top: 100,
-    left: 100,
-    behavior: 'smooth'
-  });

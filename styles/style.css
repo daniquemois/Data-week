@@ -79,7 +79,7 @@ button:hover, .startbutton:hover{
     background: linear-gradient(to left, var(--rood) 75%, var(--blauw) 25%)!important;
 }
 .winstmik{
-    background: linear-gradient(to left, var(--rood) 25%, var(--blauw) 75%)!important;
+    background: linear-gradient(to right, var(--blauw) 75%, var(--rood) 25%)!important;
 }
 .danique{
     height: 93vh;
@@ -104,6 +104,7 @@ button:hover, .startbutton:hover{
     height: 30em;
     overflow: hidden;
     overflow-y: auto;
+    z-index: 10;
 }
 .intro{
     position: absolute;
@@ -184,8 +185,9 @@ input[type='radio']:checked:after {
 }
 .legenda2{
     position: absolute;
-    bottom: -44em;
-    left: 20em;
+    bottom: -43em;
+    right: 4em;
+    height: 12em;
 }
 .miksmaak{
     position: absolute;
