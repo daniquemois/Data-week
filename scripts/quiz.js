@@ -26,11 +26,16 @@ function checkAnswers() {
 }
 
 function submitAnswers() {
-    if (score <= 7){ 
+    if (score <= 6){ 
         achtergrond.classList.remove("backgroundtest");
         achtergrond.classList.add("winstmik");
         test.classList.add("hide")
-	}
+    }
+    if(score = 6){
+        achtergrond.classList.remove("backgroundtest");
+        achtergrond.classList.add("gelijkspel");
+        test.classList.add("hide") 
+    }
 	else if (score > 7){ 
         achtergrond.classList.remove("backgroundtest");
         achtergrond.classList.add("winstdanique");

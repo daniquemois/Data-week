@@ -81,6 +81,9 @@ button:hover, .startbutton:hover{
 .winstmik{
     background: linear-gradient(to right, var(--blauw) 75%, var(--rood) 25%)!important;
 }
+.gelijkspel{
+    background-image: linear-gradient(to right, var(--blauw) , var(--rood))!important;
+}
 .danique{
     height: 93vh;
     margin-top: 5.5em;
@@ -194,4 +197,20 @@ input[type='radio']:checked:after {
     left: 3em;
     top: 50em;
     height: 27em;
+}
+.aux{
+    position: absolute;
+    height: 40em;
+    top: 48em;
+    left: 41em;
+}
+.lijstdanique{
+    position: absolute;
+    right: 30em;
+    bottom: -43em;
+}
+.lijstmik{
+    position: absolute;
+    left: 28em;
+    bottom: -43em;
 }
